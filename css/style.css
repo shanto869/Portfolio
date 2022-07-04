@@ -10,11 +10,6 @@
     padding: 0;
 }
 
-.container {
-	width: 1170px;
-	margin: 0 auto;
-}
-
 a {
     text-decoration: none;
 }
@@ -24,14 +19,17 @@ a {
     ================= */
 
 #banner {
-    display: flex;
     background-image: url(../images/top-banner.png);
     background-repeat: no-repeat;
     background-position: top-left;
     margin-bottom: 200px;
 }
 
-
+#banner .container {
+	width: 1170px;
+	margin: 0 auto;
+    display: flex;
+}
 
 #banner .banner-info {
     width: 50%;
@@ -47,7 +45,7 @@ a {
 }
 
 #banner .banner-info h1 span {
-   color: darkorange;
+    color: #ffb825;
 }
 
 #banner .banner-info h3 {
@@ -72,7 +70,7 @@ a {
 }
 
 #banner .banner-info a {
-    background-color: tomato;
+    background-color: #f9725c;
     color: white;
     font-size: 18px;
     text-transform: uppercase;
@@ -84,8 +82,8 @@ a {
 }
 
 #banner .banner-info a:hover {
-    background-color: darkslateblue;
-     color: darkorange;
+    background-color: #ff5096;
+     color: yellow;
  }
 
 /* banner-info css ends */
@@ -108,10 +106,15 @@ a {
     resume-info css starts 
     ================= */
  #resume {
-    display: flex;
     background-image: url(../images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+
+#resume .container {
+	width: 1170px;
+	margin: 0 auto;
+    display: flex;
 }
     
 #resume .resume-photo {
@@ -138,7 +141,7 @@ a {
 }
 
 #resume .resume-info h1 span {
-    color: darkorange;
+    color: #ffb825;
 }
 
 #resume .resume-info h3 {
@@ -159,11 +162,10 @@ a {
     padding-right: 150px;
     line-height: 25px;
     margin-bottom: 40px;
-
 }
 
 #resume .resume-info a {
-    background-color: tomato;
+    background-color: #ffa62f;
     color: white;
     font-size: 18px;
     text-transform: uppercase;
@@ -175,8 +177,8 @@ a {
 }
 
 #resume .resume-info a:hover {
-   background-color: darkslateblue;
-    color: darkorange;
+   background-color: #ff5096;
+    color: yellow;
 }
 
 /* ===================
@@ -186,8 +188,133 @@ a {
 
 
 /* ===================
-    expriences-info css ends 
+    expriences-info css starts 
     ================= */
+
+#exprience-info {
+    margin-top: 200px;
+    margin-bottom: 120px;
+    background-image: url(../images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: top-left;
+}
+
+#exprience-info .container {
+	width: 1170px;
+	margin: 0 auto;
+    display: flex;
+}
+
+#exprience-info h1 {
+    font-size: 40px;
+    font-family: var(--mainfont);
+    font-weight: 700;
+    text-transform: capitalize;
+    color: black;
+    margin-bottom: 70px;
+    padding-right: 100px;
+}
+
+#exprience-info .card {
+    display: flex;
+    align-content: space-between;
+}
+
+#exprience-info #card12 {
+    width: 500px;
+    padding-left: 30px;
+}
+
+#exprience-info .card .card-1 {
+    box-shadow: 2px 2px 14px -3px;
+    border-left: 6px solid #f9725c;
+    border-bottom: 6px solid #f9725c;
+    border-radius: 5px;
+}
+
+#exprience-info .card .card-1 h2{
+    font-size: 35px;
+    font-family: var(--subfont);
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+    margin: 40px 0;
+}
+#exprience-info .card .card-1 h3{
+    font-size: 20px;
+    font-family: var(--subfont);
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ffb825;
+}
+
+#exprience-info .card .card-1 p {
+    color: #353535;
+    font-size: 16px;
+    font-family: var(--parafont);
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    padding-right: 40px;
+} 
+
+/* card-1 css ends */
+
+#exprience-info .card .card-2 {
+    box-shadow: 2px 2px 14px -3px;
+    border-left: 6px solid #f9725c;
+    border-bottom: 6px solid #f9725c;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+
+#exprience-info .card .card-2 h2{
+    font-size: 35px;
+    font-family: var(--subfont);
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+    margin: 40px 0;
+}
+#exprience-info .container .card .card-2 h3{
+    font-size: 20px;
+    font-family: var(--subfont);
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ffb825;
+}
+
+#exprience-info .card .card-2 p {
+    color: #353535;
+    font-size: 16px;
+    font-family: var(--parafont);
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    padding-right: 40px;
+} 
+
 /* ===================
     expriences-info css ends 
+    ================= */
+
+    /* ===================
+    footer css starts 
+    ================= */
+    #footer p {
+        text-align: center;
+        font-family: var(--parafont);
+        font-weight: 500;
+        font-size: 18px;
+        color: #353535;
+        margin-bottom: 50px;
+    }
+
+    #footer p span {
+        color: #ffb825;
+    }
+    /* ===================
+     footer css ends 
     ================= */
