@@ -1,0 +1,20 @@
+body{
+    font-family: 
+    
+}
+
+:root {
+    --mainfont: font-family: 'Lato', sans-serif;
+    --subfont: font-family: 'Heebo', sans-serif;
+    --parafont: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
